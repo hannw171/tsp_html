@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=devide-width, initial-scale=1.0" />
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.4.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        :root {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d', //contoh
+
+                    }
+                }
+            }
+        }
+    </script>
+
+    <title>Beranda - PT. Tegus Seksama Prima</title>
+</head>
+
+<body class="bg-gray-50 text-gray-900">
+    <!-- TODO Wrapper: Setinggan breakpoint untuk responsive -->
+    <div class="max-w-sm p-4 sm:max-w-2xl lg:max-w-5xl xl:max-w-7xl mx-auto">
+        <!-- Navbar -->
+        <div class="flex flex-row justify-between py-4 items-center">
+            <!-- Logo -->
+            <img class="h-[36px] sm:h-[64px]" src="./assets/logo/logo-lg.png" alt="" srcset="">
+
+            <!-- Navigation -->
+            <div class="flex items-center">
+                <!-- Desktop -->
+                <div class="hidden lg:flex">
+                    <div class="flex flex-row justify-evenly gap-x-6 items-center font-medium text-base">
+                        <a class="hover:text-emerald-600 transition ease-in-out duration-[300]" href="#hero">Beranda</a>
+                        <a class="hover:text-emerald-600 transition ease-in-out duration-[300]"
+                            href="#product">Produk</a>
+                        <a class="hover:text-emerald-600 transition ease-in-out duration-[300]" href="#about-us">Tentang
+                            Kami</a>
+                        <a class="hover:text-emerald-600 transition ease-in-out duration-[300]"
+                            href="#gallery">Galeri</a>
+                        <a class="hover:text-emerald-600 transition ease-in-out duration-[300]"
+                            href="#tet-started">Kontak</a>
+                    </div>
+                </div>
+                <!-- Mobile & Tablet -->
+                <div class="navbar-end lg:hidden">
+                    <details class="dropdown dropdown-end">
+                        <summary tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 sm:h-7 sm:w-7" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h7" />
+                            </svg>
+                        </summary>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content gap-y-2 mt-3 z-20 p-2 shadow bg-white/95 rounded-box w-52">
+                            <li><a href="#hero">Beranda</a></li>
+                            <li><a href="#product">Produk</a></li>
+                            <li><a href="#about-us">Tentang Kami</a></li>
+                            <li><a href="#gallery">Galeri</a></li>
+                            <li><a href="#get-started">Kontak</a></li>
+                        </ul>
+                    </details>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Section -->
+        <div class="flex flex-col py-20 w-full justify-center">
+            <!-- Header -->
+            <div class="flex flex-col gap-y-3 items-center">
+                <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold">Discover Our Product</h2>
+                <p class="text-xs sm:text-base lg:text-lg font-normal text-center">Kami menghadirkan beragam produk
+                    unggulan Indonesia, termasuk hasil pertanian, makanan olahan, tekstil, dan bahan baku industri,
+                    memastikan kualitas terbaik dari nusantara.</p>
+            </div>
+
+            <!-- Selection Tipe Produk -->
+            <div class="w-full py-6">
+                <ul
+                    class="flex flex-wrap gap-2 justify-center w-full text-sm font-medium text-gray-500 dark:text-gray-400">
+                    <li class="w-fit">
+                        <a id="pertanian" href="#"
+                            class="text-xs border-2 border-emerald-600 text-gray-800 inline-block px-4 py-3 hover:text-white hover:bg-emerald-600 rounded-full focus:bg-emerald-600 focus:text-white focus:outline-none">Pertanian</a>
+                    </li>
+                    <li class="w-fit">
+                        <a href="#"
+                            class="text-xs border-2 border-emerald-600 text-gray-800 inline-block px-4 py-3 hover:text-white hover:bg-emerald-600 rounded-full">Makanan
+                            Olahan</a>
+                    </li>
+                    <li class="w-fit">
+                        <a href="#"
+                            class="text-xs border-2 border-emerald-600 text-gray-800 inline-block px-4 py-3 hover:text-white hover:bg-emerald-600 rounded-full">Tekstil
+                            dan Kerajinan</a>
+                    </li>
+                    <li class="w-fit">
+                        <a href="#"
+                            class="text-xs border-2 border-emerald-600 text-gray-800 inline-block px-4 py-3 hover:text-white hover:bg-emerald-600 rounded-full">Bahan
+                            Baku Industri</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Wrapper Content -->
+            <div class="w-full py-4">
+                <!-- Content -->
+                <div class="grid grid-cols-1 gap-8">
+                    <!-- Kategori -->
+                    <div class="flex flex-col p-3 gap-y-3 bg-white rounded-lg">
+                        <p class="text-base font-bold text-green-800">Kategori</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="flex flex-col py-10 w-full">
+            <div class="flex flex-col gap-y-1 md:gap-y-8">
+                <div class="flex grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <div class="flex flex-col gap-y-4">
+                        <img src="./assets/logo/logo-lg.png" class="h-9 md:h-14 w-fit" alt="">
+                        <h2 class="text-xl md:text-2xl font-bold">PT. Teguh Seksama Prima</h2>
+                        <p class="text-xs md:text-base font-normal text-gray-700">Menjelajahi dan Memperkenalkan
+                            Kekayaan Produk
+                            Indonesia ke Seluruh Dunia. "Inovasi Tanpa Batas, Berkolaborasi untuk Kemajuan."</p>
+                    </div>
+                    <div class="flex flex-col gap-y-4">
+                        <a class="text-xs md:text-base font-bold underline text-gray-700">email_perusahaan@email.com</a>
+                        <p class="text-xs md:text-base font-normal text-gray-700">(021)-1234567, 088123456789</p>
+                        <p class="text-xs md:text-base font-normal text-gray-700">Jl. Alamat Kantor Ini Berada, No.
+                            Gedungnya, Kabupaten, Provinsi, Indonesia, Kode Pos</p>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <div class="w-full grid grid-cols-1 lg:grid-cols-2 gap-2 flex justify-between">
+                    <span class="text-xs text-center lg:text-left">© 2023 - All rights reserved</span>
+                    <span class="text-xs text-center lg:text-right">Created by Digi Dreamers</span>
+                </div>
+            </div>
+        </div>
+
+        <script src="./assets/js/fslightbox.js"></script>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script>
+            $(document).ready(function () {
+                $('a#pertanian').focus();
+            });
+        </script>
+</body>
+
+</html>
