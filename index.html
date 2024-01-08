@@ -36,8 +36,22 @@
 </head>
 
 <body class="bg-gray-50 text-gray-900">
+    <!-- Preloader -->
+    <div id="preloader" role="status" class="flex z-30 h-screen w-full bg-white-25 items-center justify-center">
+        <svg aria-hidden="true" class="w-8 h-8 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600"
+            viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z"
+                fill="currentColor" />
+            <path
+                d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z"
+                fill="currentFill" />
+        </svg>
+        <span class="sr-only">Loading...</span>
+    </div>
+
     <!-- TODO Wrapper: Setinggan breakpoint untuk responsive -->
-    <div class="max-w-sm p-4 sm:max-w-2xl lg:max-w-5xl xl:max-w-7xl mx-auto">
+    <div id="content" class="max-w-sm p-4 sm:max-w-2xl lg:max-w-5xl xl:max-w-7xl mx-auto">
         <!-- Navbar -->
         <div class="flex flex-row justify-between py-4 items-center">
             <!-- Logo -->
@@ -48,10 +62,12 @@
                 <!-- Desktop -->
                 <div class="hidden lg:flex">
                     <div class="flex flex-row justify-evenly gap-x-6 items-center font-medium text-base">
-                        <a class="hover:text-emerald-600 hover:scale-105 transition ease-in-out duration-[300]" href="index.html">Beranda</a>
+                        <a class="hover:text-emerald-600 hover:scale-105 transition ease-in-out duration-[300]"
+                            href="index.html">Beranda</a>
                         <a class="hover:text-emerald-600 hover:scale-105 transition ease-in-out duration-[300]"
                             href="#product">Produk</a>
-                        <a class="hover:text-emerald-600 hover:scale-105 transition ease-in-out duration-[300]" href="#about-us">Tentang
+                        <a class="hover:text-emerald-600 hover:scale-105 transition ease-in-out duration-[300]"
+                            href="#about-us">Tentang
                             Kami</a>
                         <a class="hover:text-emerald-600 hover:scale-105 transition ease-in-out duration-[300]"
                             href="#gallery">Galeri</a>
@@ -132,11 +148,14 @@
                         <!-- Text Group -->
                         <div class="h-fit flex-col justify-start items-start gap-2 flex">
                             <div class="text-left text-white text-xl font-light">
-                                <h5>PT. Teguh Seksama Prima</h5></div>
+                                <h5>PT. Teguh Seksama Prima</h5>
+                            </div>
                             <div class="text-left text-white text-5xl font-bold leading-tight z-10">
-                                <h1>Inovasi Tanpa Batas, Berkolaborasi untuk Kemajuan</h1></div>
+                                <h1>Inovasi Tanpa Batas, Berkolaborasi untuk Kemajuan</h1>
+                            </div>
                             <div class="text-left text-white text-xl font-light">
-                                <h5>Menjelajahi dan Memperkenalkan Kekayaan Produk Indonesia ke Seluruh Dunia</h5></div>
+                                <h5>Menjelajahi dan Memperkenalkan Kekayaan Produk Indonesia ke Seluruh Dunia</h5>
+                            </div>
                         </div>
                         <!-- Button Group -->
                         <div class="justify-center items-start gap-3 inline-flex">
@@ -614,13 +633,15 @@
                     <div class="flex flex-col gap-y-4">
                         <img src="./assets/logo/logo-lg.png" class="h-9 md:h-14 w-fit" alt="">
                         <h2 class="text-xl md:text-2xl font-bold">PT. Teguh Seksama Prima</h2>
-                        <p class="text-xs md:text-base font-normal text-gray-700">Menjelajahi dan Memperkenalkan Kekayaan Produk
+                        <p class="text-xs md:text-base font-normal text-gray-700">Menjelajahi dan Memperkenalkan
+                            Kekayaan Produk
                             Indonesia ke Seluruh Dunia. "Inovasi Tanpa Batas, Berkolaborasi untuk Kemajuan."</p>
                     </div>
                     <div class="flex flex-col gap-y-4">
                         <a class="text-xs md:text-base font-bold underline text-gray-700">email_perusahaan@email.com</a>
                         <p class="text-xs md:text-base font-normal text-gray-700">(021)-1234567, 088123456789</p>
-                        <p class="text-xs md:text-base font-normal text-gray-700">Jl. Alamat Kantor Ini Berada, No. Gedungnya, Kabupaten, Provinsi, Indonesia, Kode Pos</p>
+                        <p class="text-xs md:text-base font-normal text-gray-700">Jl. Alamat Kantor Ini Berada, No.
+                            Gedungnya, Kabupaten, Provinsi, Indonesia, Kode Pos</p>
                     </div>
                 </div>
                 <div class="divider"></div>
@@ -632,6 +653,17 @@
         </div>
 
         <script src="./assets/js/fslightbox.js"></script>
+        <script>
+            window.addEventListener('load', function () {
+                var preloader = document.getElementById('preloader');
+                var content = document.getElementById('content');
+
+                // Sembunyikan preloader dan tampilkan konten halaman
+                preloader.style.display = 'none';
+                content.style.display = 'block';
+            });
+        </script>
+
 </body>
 
 </html>
