@@ -37,7 +37,11 @@
 
 <body class="bg-gray-50 text-gray-900">
     <!-- TODO Wrapper: Setinggan breakpoint untuk responsive -->
-    <div class="max-w-sm p-4 sm:max-w-2xl lg:max-w-5xl xl:max-w-7xl mx-auto">
+    <!-- Preloader -->
+    <div id="preloader" role="status" class="flex z-30 h-screen w-full bg-white-25 items-center justify-center animate-pulse">
+        <img class="h-[36px] sm:h-[64px]" src="./assets/logo/logo-lg.png" alt="" srcset="">
+        <span class="sr-only">Memuat Halaman</span>
+    </div><div id="content" class="max-w-sm p-4 sm:max-w-2xl lg:max-w-5xl xl:max-w-7xl mx-auto">
         <!-- Navbar -->
         <div class="flex flex-row justify-between py-4 items-center">
             <!-- Logo -->
@@ -420,13 +424,20 @@
         </div>
 
         <script src="./assets/js/fslightbox.js"></script>
-        <!-- <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script> -->
-        <!-- <script>
-            $(document).ready(function () {
-                $('a#pertanian').focus();
+        <script>
+            window.addEventListener('load', function () {
+                var preloader = document.getElementById('preloader');
+                var content = document.getElementById('content');
+
+                // Sembunyikan preloader dan tampilkan konten halaman
+                // Menambahkan delay 1000 milidetik (1 detik) sebelum menyembunyikan preloader
+                setTimeout(function () {
+                    // Sembunyikan preloader dan tampilkan konten halaman
+                    preloader.style.display = 'none';
+                    content.style.display = 'block';
+                }, 1000);
             });
-        </script> -->
+        </script>
 </body>
 
 </html>
