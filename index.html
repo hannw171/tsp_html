@@ -7,6 +7,8 @@
 
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.4.24/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet"
+        type="text/css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -52,7 +54,8 @@
 
 <body class="bg-gray-50 text-gray-900">
     <!-- Preloader -->
-    <div id="preloader" role="status" class="flex z-30 h-screen w-full bg-white-25 items-center justify-center animate-pulse">
+    <div id="preloader" role="status"
+        class="flex z-30 h-screen w-full bg-white-25 items-center justify-center animate-pulse">
         <img class="h-[36px] sm:h-[64px]" src="./assets/logo/logo-lg.webp" alt="logo-perusahaan" srcset="">
         <span class="sr-only">Memuat Halaman</span>
     </div>
@@ -62,7 +65,8 @@
         <!-- Navbar -->
         <div class="flex flex-row justify-between py-4 items-center">
             <!-- Logo -->
-            <a href="index.html"><img class="h-[36px] sm:h-[64px]" src="./assets/logo/logo-lg.webp" alt="logo-perusahaan" srcset=""></a>
+            <a href="index.html"><img class="h-[36px] sm:h-[64px]" src="./assets/logo/logo-lg.webp"
+                    alt="logo-perusahaan" srcset=""></a>
 
             <!-- Navigation -->
             <div class="flex items-center">
@@ -116,8 +120,8 @@
                 <!-- Container Mobile & Tablet -->
                 <div class="px-10 py-10 relative xl:hidden">
                     <!-- Garis kuning di belakang text -->
-                    <img class="absolute top-[80px] left-14 sm:left-9 z-0" src="./assets/icons/line.svg" alt="yellow line"
-                        srcset="">
+                    <img class="absolute top-[80px] left-14 sm:left-9 z-0" src="./assets/icons/line.svg"
+                        alt="yellow line" srcset="">
                     <!-- Wrapper Text Group -->
                     <div class="flex-col justify-start items-center sm:items-start gap-8 flex">
                         <!-- Text Group -->
@@ -148,8 +152,8 @@
                 <!-- Container Desktop -->
                 <div class="grid grid-cols-2 gap-x-8 px-16 py-12 items-center hidden xl:flex">
                     <!-- Garis kuning di belakang text -->
-                    <img class="absolute top-[260px] w-[200px] left-14 z-0" src="./assets/icons/line.svg" alt="yellow line"
-                        srcset="">
+                    <img class="absolute top-[260px] w-[200px] left-14 z-0" src="./assets/icons/line.svg"
+                        alt="yellow line" srcset="">
                     <!-- Wrapper Text Group -->
                     <div class="z-10 flex-col justify-start items-start gap-8 flex w-full">
                         <!-- Text Group -->
@@ -178,87 +182,76 @@
                             </a>
                         </div>
                     </div>
-                    <div
-                        class="z-10 carousel carousel-center max-w-md h-[640px] py-10 space-x-6 bg-transparent rounded-box touch-pan-x">
-                        <div id="slide1" class="carousel-item relative">
-                            <img src="./assets/images/carousel-1.webp" class="rounded-box" />
-                            <div class="absolute flex flex-col justify-start items-start p-4 bottom-0 gap-y-2">
-                                <div class="bg-white rounded-md flex flex-row py-1 px-2 gap-x-1">
-                                    <img class="w-4 h-4" src="./assets/icons/star.svg" alt="bintang" srcset="">
-                                    <p class="text-xs font-semibold">Produk Unggulan</p>
+                    <div class="z-10 flex flex-col max-w-md h-[640px] gap-y-2">
+                        <div
+                            class="carousel carousel-center h-[640px] pt-10 pb-4 space-x-6 bg-transparent rounded-box touch-pan-x">
+                            <div id="slide1" class="carousel-item relative">
+                                <img src="./assets/images/carousel-1.webp" class="rounded-box" />
+                                <div class="absolute flex flex-col justify-start items-start p-4 bottom-0 gap-y-2">
+                                    <div class="bg-white rounded-md flex flex-row py-1 px-2 gap-x-1">
+                                        <img class="w-4 h-4" src="./assets/icons/star.svg" alt="bintang" srcset="">
+                                        <p class="text-xs font-semibold">Produk Unggulan</p>
+                                    </div>
+                                    <div class="bg-white/85 rounded-md flex flex-col py-2 px-3 gap-y-1">
+                                        <p class="text-sm font-bold">Makanan Olahan</p>
+                                        <p class="text-sm font-normal">Snack Tradisional khas Indonesia</p>
+                                    </div>
                                 </div>
-                                <div class="bg-white/85 rounded-md flex flex-col py-2 px-3 gap-y-1">
-                                    <p class="text-sm font-bold">Makanan Olahan</p>
-                                    <p class="text-sm font-normal">Snack Tradisional khas Indonesia</p>
-                                </div>
-                            </div>
-                            <div
-                                class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                                <a href="#slide1" class="btn btn-circle invisible">❮</a>
-                                <a href="#slide2"
-                                    class="btn text-white btn-circle bg-transparent border-white hover:bg-white/50 hover:border-none">❯</a>
-                            </div>
-                        </div>
-                        <div id="slide2" class="carousel-item relative">
-                            <img src="./assets/images/carousel-2.webp" class="rounded-box" />
-                            <div class="absolute flex flex-col justify-start items-start p-4 bottom-0 gap-y-2">
-                                <div class="bg-white rounded-md flex flex-row py-1 px-2 gap-x-1">
-                                    <img class="w-4 h-4" src="./assets/icons/star.svg" alt="bintang" srcset="">
-                                    <p class="text-xs font-semibold">Produk Unggulan</p>
-                                </div>
-                                <div class="bg-white/85 rounded-md flex flex-col py-2 px-3 gap-y-1">
-                                    <p class="text-sm font-bold">Makanan Olahan</p>
-                                    <p class="text-sm font-normal">Snack Tradisional khas Indonesia</p>
-                                </div>
-                            </div>
-                            <div
-                                class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                                <a href="#slide1"
-                                    class="btn text-white btn-circle bg-transparent border-white hover:bg-white/50 hover:border-none">❮</a>
-                                <a href="#slide3"
-                                    class="btn text-white btn-circle bg-transparent border-white hover:bg-white/50 hover:border-none">❯</a>
-                            </div>
-                        </div>
-                        <div id="slide3" class="carousel-item relative">
-                            <img src="./assets/images/carousel-3.webp" class="rounded-box" />
-                            <div class="absolute flex flex-col justify-start items-start p-4 bottom-0 gap-y-2">
-                                <div class="bg-white rounded-md flex flex-row py-1 px-2 gap-x-1">
-                                    <img class="w-4 h-4" src="./assets/icons/star.svg" alt="bintang" srcset="">
-                                    <p class="text-xs font-semibold">Produk Unggulan</p>
-                                </div>
-                                <div class="bg-white/85 rounded-md flex flex-col py-2 px-3 gap-y-1">
-                                    <p class="text-sm font-bold">Makanan Olahan</p>
-                                    <p class="text-sm font-normal">Snack Tradisional khas Indonesia</p>
-                                </div>
-                            </div>
-                            <div
-                                class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                                <a href="#slide2"
-                                    class="btn text-white btn-circle bg-transparent border-white hover:bg-white/50 hover:border-none">❮</a>
-                                <a href="#slide4"
-                                    class="btn text-white btn-circle bg-transparent border-white hover:bg-white/50 hover:border-none">❯</a>
-                            </div>
-                        </div>
-                        <div id="slide4" class="carousel-item relative">
-                            <img src="./assets/images/carousel-4.webp" class="rounded-box" />
-                            <div class="absolute flex flex-col justify-start items-start p-4 bottom-0 gap-y-2">
-                                <div class="bg-white rounded-md flex flex-row py-1 px-2 gap-x-1">
-                                    <img class="w-4 h-4" src="./assets/icons/star.svg" alt="bintang" srcset="">
-                                    <p class="text-xs font-semibold">Produk Unggulan</p>
-                                </div>
-                                <div class="bg-white/85 rounded-md flex flex-col py-2 px-3 gap-y-1">
-                                    <p class="text-sm font-bold">Makanan Olahan</p>
-                                    <p class="text-sm font-normal">Snack Tradisional khas Indonesia</p>
-                                </div>
-                            </div>
-                            <div
-                                class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                                <a href="#slide3"
-                                    class="btn text-white btn-circle bg-transparent border-white hover:bg-white/50 hover:border-none">❮</a>
-                                <a href="#slide5" class="btn btn-circle invisible">❯</a>
-                            </div>
-                        </div>
 
+                            </div>
+                            <div id="slide2" class="carousel-item relative">
+                                <img src="./assets/images/carousel-2.webp" class="rounded-box" />
+                                <div class="absolute flex flex-col justify-start items-start p-4 bottom-0 gap-y-2">
+                                    <div class="bg-white rounded-md flex flex-row py-1 px-2 gap-x-1">
+                                        <img class="w-4 h-4" src="./assets/icons/star.svg" alt="bintang" srcset="">
+                                        <p class="text-xs font-semibold">Produk Unggulan</p>
+                                    </div>
+                                    <div class="bg-white/85 rounded-md flex flex-col py-2 px-3 gap-y-1">
+                                        <p class="text-sm font-bold">Makanan Olahan</p>
+                                        <p class="text-sm font-normal">Snack Tradisional khas Indonesia</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div id="slide3" class="carousel-item relative">
+                                <img src="./assets/images/carousel-3.webp" class="rounded-box" />
+                                <div class="absolute flex flex-col justify-start items-start p-4 bottom-0 gap-y-2">
+                                    <div class="bg-white rounded-md flex flex-row py-1 px-2 gap-x-1">
+                                        <img class="w-4 h-4" src="./assets/icons/star.svg" alt="bintang" srcset="">
+                                        <p class="text-xs font-semibold">Produk Unggulan</p>
+                                    </div>
+                                    <div class="bg-white/85 rounded-md flex flex-col py-2 px-3 gap-y-1">
+                                        <p class="text-sm font-bold">Makanan Olahan</p>
+                                        <p class="text-sm font-normal">Snack Tradisional khas Indonesia</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div id="slide4" class="carousel-item relative">
+                                <img src="./assets/images/carousel-4.webp" class="rounded-box" />
+                                <div class="absolute flex flex-col justify-start items-start p-4 bottom-0 gap-y-2">
+                                    <div class="bg-white rounded-md flex flex-row py-1 px-2 gap-x-1">
+                                        <img class="w-4 h-4" src="./assets/icons/star.svg" alt="bintang" srcset="">
+                                        <p class="text-xs font-semibold">Produk Unggulan</p>
+                                    </div>
+                                    <div class="bg-white/85 rounded-md flex flex-col py-2 px-3 gap-y-1">
+                                        <p class="text-sm font-bold">Makanan Olahan</p>
+                                        <p class="text-sm font-normal">Snack Tradisional khas Indonesia</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="flex flex-row gap-x-2">
+                            <button id="prevBtn"
+                                class="bg-emerald-200 text-emerald-300 rounded-full w-[32px] h-[32px] hidden md:block">
+                                <i class="fas fa-chevron-left text-sm"></i>
+                            </button>
+                            <button id="nextBtn"
+                                class="bg-emerald-50 text-emerald-300 rounded-full w-[32px] h-[32px] hidden md:block">
+                                <i class="fas fa-chevron-right text-sm"></i>
+                            </button>
+                        </div>
                     </div>
                 </div>
 
@@ -327,7 +320,8 @@
                         <!-- Garis kuning di belakang text -->
                         <img class="absolute top-[175px] w-[260px] left-11 sm:top-[140px] sm:left-[265px] md:left-8 md:top-[175px] lg:top-[140px] lg:left-[175px] z-0"
                             src="./assets/icons/line-visi-misi.svg" alt="bg visi misi" srcset="">
-                        <img src="./assets/logo/logo-white.webp" class="h-12 w-12" alt="logo-perusahaan putih" srcset="">
+                        <img src="./assets/logo/logo-white.webp" class="h-12 w-12" alt="logo-perusahaan putih"
+                            srcset="">
                         <div class="flex flex-col items-center md:items-start gap-y-3">
                             <h2 class="text-3xl font-bold text-white text-center md:text-left z-10">Inspiring
                                 Transformation</h2>
@@ -502,7 +496,8 @@
                         mendukung pertumbuhan ekonomi Indonesia melalui perdagangan dan pembinaan.</p>
                 </div>
                 <div class="flex grid grid-cols-1 lg:grid-cols-2 gap-8 items-start justify-start">
-                    <div class="bg-[url('./assets/images/about-us.webp')] bg-center bg-cover h-[304px] rounded-xl"></div>
+                    <div class="bg-[url('./assets/images/about-us.webp')] bg-center bg-cover h-[304px] rounded-xl">
+                    </div>
                     <div
                         class="flex grid grid-cols-2 md:grid-cols-4 lg:grid-cols-2 gap-8 items-start justify-start h-max">
                         <div class="flex flex-col gap-y-6">
@@ -608,7 +603,8 @@
         <div class="py-20 w-full flex flex-col gap-y-[3rem] md:gap-y-[4rem]">
             <div class="flex flex-col gap-y-4 items-center">
                 <h2 class="text-2xl text-center md:text-3xl lg:text-4xl font-bold">Collaboration</h2>
-                <p class="max-w-2xl text-xs text-center md:text-base lg:text-base font-normal">Bersama rekanan kami yang lainnya, mari kita berkolaborasi mewujudkan pertumbuhan ekonomi lintas sektor di Indonesia</p>
+                <p class="max-w-2xl text-xs text-center md:text-base lg:text-base font-normal">Bersama rekanan kami yang
+                    lainnya, mari kita berkolaborasi mewujudkan pertumbuhan ekonomi lintas sektor di Indonesia</p>
             </div>
             <div
                 class="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)]">
@@ -616,16 +612,20 @@
                 <ul
                     class="flex items-center justify-center md:justify-start [&_li]:mx-4 md:[&_li]:mx-8 [&_img]:max-w-none animate-marquee">
                     <li>
-                        <img class="h-[24px] md:h-[48px] grayscale hover:grayscale-0 transition ease-in-out duration-[500]" src="./assets/logo/company-1.webp" alt="partners-1">
+                        <img class="h-[24px] md:h-[48px] grayscale hover:grayscale-0 transition ease-in-out duration-[500]"
+                            src="./assets/logo/company-1.webp" alt="partners-1">
                     </li>
                     <li>
-                        <img class="h-[24px] md:h-[48px] grayscale hover:grayscale-0 transition ease-in-out duration-[500]" src="./assets/logo/company-2.webp" alt="partners-2">
+                        <img class="h-[24px] md:h-[48px] grayscale hover:grayscale-0 transition ease-in-out duration-[500]"
+                            src="./assets/logo/company-2.webp" alt="partners-2">
                     </li>
                     <li>
-                        <img class="h-[24px] md:h-[48px] grayscale hover:grayscale-0 transition ease-in-out duration-[500]" src="./assets/logo/company-3.webp" alt="partners-3">
+                        <img class="h-[24px] md:h-[48px] grayscale hover:grayscale-0 transition ease-in-out duration-[500]"
+                            src="./assets/logo/company-3.webp" alt="partners-3">
                     </li>
                     <li>
-                        <img class="h-[24px] md:h-[48px] grayscale hover:grayscale-0 transition ease-in-out duration-[500]" src="./assets/logo/company-4.webp" alt="partners-4">
+                        <img class="h-[24px] md:h-[48px] grayscale hover:grayscale-0 transition ease-in-out duration-[500]"
+                            src="./assets/logo/company-4.webp" alt="partners-4">
                     </li>
                 </ul>
 
@@ -633,16 +633,20 @@
                 <ul class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-marquee"
                     aria-hidden="true">
                     <li>
-                        <img class="h-[24px] md:h-[48px] grayscale hover:grayscale-0 transition ease-in-out duration-[500]" src="./assets/logo/company-1.webp" alt="partners-1">
+                        <img class="h-[24px] md:h-[48px] grayscale hover:grayscale-0 transition ease-in-out duration-[500]"
+                            src="./assets/logo/company-1.webp" alt="partners-1">
                     </li>
                     <li>
-                        <img class="h-[24px] md:h-[48px] grayscale hover:grayscale-0 transition ease-in-out duration-[500]" src="./assets/logo/company-2.webp" alt="partners-2">
+                        <img class="h-[24px] md:h-[48px] grayscale hover:grayscale-0 transition ease-in-out duration-[500]"
+                            src="./assets/logo/company-2.webp" alt="partners-2">
                     </li>
                     <li>
-                        <img class="h-[24px] md:h-[48px] grayscale hover:grayscale-0 transition ease-in-out duration-[500]" src="./assets/logo/company-3.webp" alt="partners-3">
+                        <img class="h-[24px] md:h-[48px] grayscale hover:grayscale-0 transition ease-in-out duration-[500]"
+                            src="./assets/logo/company-3.webp" alt="partners-3">
                     </li>
                     <li>
-                        <img class="h-[24px] md:h-[48px] grayscale hover:grayscale-0 transition ease-in-out duration-[500]" src="./assets/logo/company-4.webp" alt="partners-4">
+                        <img class="h-[24px] md:h-[48px] grayscale hover:grayscale-0 transition ease-in-out duration-[500]"
+                            src="./assets/logo/company-4.webp" alt="partners-4">
                     </li>
                 </ul>
             </div>
@@ -683,7 +687,7 @@
                 <div class="flex grid grid-cols-1 lg:grid-cols-2 gap-8">
                     <div class="flex flex-col gap-y-4">
                         <img src="./assets/logo/logo-lg.webp" class="h-9 md:h-14 w-[140px] md:w-fit" alt="logo-perusahaan>
-                        <h2 class="text-xl md:text-2xl font-bold">PT. Teguh Seksama Prima</h2>
+                        <h2 class=" text-xl md:text-2xl font-bold">PT. Teguh Seksama Prima</h2>
                         <p class="text-xs md:text-base font-normal text-gray-700">Menjelajahi dan Memperkenalkan
                             Kekayaan Produk
                             Indonesia ke Seluruh Dunia. "Inovasi Tanpa Batas, Berkolaborasi untuk Kemajuan."</p>
@@ -719,7 +723,35 @@
                 }, 1000);
             });
         </script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const nextBtn = document.getElementById("nextBtn");
+                const prevBtn = document.getElementById("prevBtn");
+                const carousel = document.querySelector(".carousel");
 
+                nextBtn.addEventListener("click", function () {
+                    carousel.scrollLeft += 220; // Sesuaikan jumlah pixel yang ingin digeser
+                });
+                prevBtn.addEventListener("click", function () {
+                    carousel.scrollLeft -= 220; // Sesuaikan jumlah pixel yang ingin digeser
+                });
+
+                carousel.addEventListener("scroll", function () {
+                    var atEnd =
+                        carousel.scrollLeft + carousel.offsetWidth >=
+                        carousel.scrollWidth - 16;
+                    var atStart = carousel.scrollLeft === 0;
+
+                    // Menghapus kelas warna jika belum mencapai batas akhir atau awal
+                    nextBtn.classList.remove("bg-emerald-200", "bg-emerald-50");
+                    prevBtn.classList.remove("bg-emerald-50", "bg-emerald-200");
+
+                    // Menambahkan kelas warna jika sudah mencapai batas akhir atau awal
+                    nextBtn.classList.add(atEnd ? "bg-emerald-200" : "bg-emerald-50");
+                    prevBtn.classList.add(atStart ? "bg-emerald-200" : "bg-emerald-50");
+                });
+            });
+        </script>
 </body>
 
 </html>
