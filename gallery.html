@@ -35,13 +35,13 @@
     <title>Katalog Produk - PT. Tegus Seksama Prima</title>
 </head>
 
-<body class="bg-gray-50 text-gray-900">
+<body class="bg-gray-50 text-gray-900 h-screen">
     <!-- Preloader -->
     <div id="preloader" role="status" class="flex z-30 h-screen w-full bg-white-25 items-center justify-center animate-pulse">
         <img class="h-[36px] sm:h-[64px]" src="./assets/logo/logo-lg.png" alt="" srcset="">
         <span class="sr-only">Memuat Halaman</span>
     </div><!-- TODO Wrapper: Setinggan breakpoint untuk responsive -->
-    <div id="content" class="max-w-sm p-4 sm:max-w-2xl lg:max-w-5xl xl:max-w-7xl mx-auto">
+    <div id="content" class="max-w-sm p-4 sm:max-w-2xl lg:max-w-5xl xl:max-w-7xl mx-auto min-h-screen flex flex-col">
         <!-- Navbar -->
         <div class="flex flex-row justify-between py-4 items-center">
             <!-- Logo -->
@@ -89,14 +89,15 @@
         </div>
 
         <!-- Main Section -->
-        <div class="flex flex-col py-10 md:py-20 w-full justify-center gap-y-8">
+        <div class="flex flex-col py-10 md:py-20 w-full justify-center gap-y-8 flex-1">
             <div class="flex flex-col gap-y-4 mb-8">
                 <h2 class="text-2xl sm:text-3xl xl:text-4xl font-bold text-center">Captured Moment</h2>
                 <p class="text-xs sm:text-base xl:text-lg font-normal text-center">Ikuti kami, tau lebih dalam lagi
                     tentang kami, mari berkolaborasi untuk kemajuan negeri.</p>
             </div>
 
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <!-- List Gallery/Gallery items-->
+            <!-- <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
                 <div class="grid gap-4">
                     <a data-fslightbox href="./assets/images/gallery-6.png"><img
                             class="h-full max-w-full rounded-lg hover:scale-[1.015] hover:opacity-80 transition ease-in-out duration-[500] object-cover hover:shadow-lg"
@@ -148,6 +149,11 @@
                             src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-6.jpg" alt="">
                     </a>
                 </div>
+            </div> -->
+
+            <!-- Gallery items state 0 item -->
+            <div class="flex justify-center">
+                <p class="text-xs sm:text-base xl:text-lg font-normal text-center">Data tidak ditemukan</p>
             </div>
 
         </div>
@@ -191,7 +197,7 @@
                 setTimeout(function () {
                     // Sembunyikan preloader dan tampilkan konten halaman
                     preloader.style.display = 'none';
-                    content.style.display = 'block';
+                    content.style.display = 'flex';
                 }, 1000);
             });
         </script>
