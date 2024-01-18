@@ -38,14 +38,14 @@
 <body class="bg-gray-50 text-gray-900">
     <!-- Preloader -->
     <div id="preloader" role="status" class="flex z-30 h-screen w-full bg-white-25 items-center justify-center animate-pulse">
-        <img class="h-[36px] sm:h-[64px]" src="./assets/logo/logo-lg.png" alt="" srcset="">
+        <img class="h-[36px] sm:h-[64px]" src="./assets/logo/logo-lg.webp" alt="logo-perusahaan srcset="">
         <span class="sr-only">Memuat Halaman</span>
     </div><!-- TODO Wrapper: Setinggan breakpoint untuk responsive -->
     <div id="content" class="max-w-sm p-4 sm:max-w-2xl lg:max-w-5xl xl:max-w-7xl mx-auto">
         <!-- Navbar -->
         <div class="flex flex-row justify-between py-4 items-center">
             <!-- Logo -->
-            <a href="index.html"><img class="h-[36px] sm:h-[64px]" src="./assets/logo/logo-lg.png" alt="" srcset=""></a>
+            <a href="index.html"><img class="h-[36px] sm:h-[64px]" src="./assets/logo/logo-lg.webp" alt="logo-perusahaan srcset=""></a>
 
             <!-- Navigation -->
             <div class="flex items-center">
@@ -98,7 +98,7 @@
             </div>
 
             <div class="flex flex-col gap-8 items-start justify-start">
-                <img src="./assets/images/about-us.png" class="w-full object-center object-cover h-[304px] lg:h-[500px] rounded-xl"></img>
+                <img src="./assets/images/about-us.webp" class="w-full object-center object-cover h-[304px] lg:h-[500px] rounded-xl"></img>
                 <p class="text-xs sm:text-base xl:text-lg font-normal">PT Teguh Seksama Prima adalah perusahaan yang
                     didirikan pada tahun 2023, menjadi pelopor dalam perdagangan dan pembinaan lintas sektor di
                     Indonesia. Kami dikenal sebagai agen perubahan yang membawa berbagai produk unggulan Indonesia ke
@@ -124,15 +124,15 @@
              <div id="visi-misi" class="flex w-full justify-center">
                 <div class="relative bg-emerald-600 rounded-xl w-full h-fit">
                     <div
-                        class="w-full h-full absolute z-0 rounded-xl bg-center bg-cover opacity-15 bg-no-repeat bg-[url('./assets/images/visi-misi.png')]">
+                        class="w-full h-full absolute z-0 rounded-xl bg-center bg-cover opacity-15 bg-no-repeat bg-[url('./assets/images/visi-misi.webp')]">
                     </div>
 
                     <div class="flex grid grid-cols-1 md:grid-cols-2 px-9 py-12 gap-8">
                         <div class="flex flex-col items-center md:items-start gap-y-6 pb-6">
                             <!-- Garis kuning di belakang text -->
                             <img class="absolute top-[175px] w-[260px] left-11 sm:top-[140px] sm:left-[265px] md:left-8 md:top-[175px] lg:top-[140px] lg:left-[175px] z-0"
-                                src="./assets/icons/line-visi-misi.svg" alt="" srcset="">
-                            <img src="./assets/logo/logo-white.png" class="h-12 w-12" alt="" srcset="">
+                                src="./assets/icons/line-visi-misi.svg" alt="yellow line" srcset="">
+                            <img src="./assets/logo/logo-white.webp" class="h-12 w-12" alt="logo-perusahaan putih" srcset="">
                             <div class="flex flex-col items-center md:items-start gap-y-3">
                                 <h2 class="text-3xl font-bold text-white text-center md:text-left z-10">Inspiring
                                     Transformation</h2>
@@ -204,16 +204,14 @@
             <div class="flex flex-col gap-y-1 md:gap-y-8">
                 <div class="flex grid grid-cols-1 lg:grid-cols-2 gap-8">
                     <div class="flex flex-col gap-y-4">
-                        <img src="./assets/logo/logo-lg.png" class="h-9 md:h-14 w-fit" alt="">
+                        <img src="./assets/logo/logo-lg.webp" class="h-9 md:h-14 w-fit object-cover" alt="logo-perusahaan">
                         <h2 class="text-xl md:text-2xl font-bold">PT. Teguh Seksama Prima</h2>
-                        <p class="text-xs lg:text-sm md:text-base font-normal text-gray-700">Menjelajahi dan
-                            Memperkenalkan
+                        <p class="text-xs md:text-base font-normal text-gray-700">Menjelajahi dan Memperkenalkan
                             Kekayaan Produk
                             Indonesia ke Seluruh Dunia. "Inovasi Tanpa Batas, Berkolaborasi untuk Kemajuan."</p>
                     </div>
                     <div class="flex flex-col gap-y-4">
-                        <a
-                            class="text-xs lg:text-sm md:text-base font-bold underline text-gray-700">email_perusahaan@email.com</a>
+                        <a class="text-xs md:text-base font-bold underline text-gray-700">email_perusahaan@email.com</a>
                         <p class="text-xs md:text-base font-normal text-gray-700">(021)-1234567, 088123456789</p>
                         <p class="text-xs md:text-base font-normal text-gray-700">Jl. Alamat Kantor Ini Berada, No.
                             Gedungnya, Kabupaten, Provinsi, Indonesia, Kode Pos</p>
@@ -228,10 +226,11 @@
         </div>
 
         <script src="./assets/js/fslightbox.js"></script>
-        <script>
+         <script>
             window.addEventListener('load', function () {
                 var preloader = document.getElementById('preloader');
                 var content = document.getElementById('content');
+                content.style.display = 'none';
 
                 // Sembunyikan preloader dan tampilkan konten halaman
                 // Menambahkan delay 1000 milidetik (1 detik) sebelum menyembunyikan preloader
